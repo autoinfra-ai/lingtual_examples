@@ -1,5 +1,9 @@
-# How to Upload Examples to [Lingtual]
+# Fork from Langflow 
 Forked from **https://github.com/logspace-ai/langflow**
+
+- this is a temporary fork with examples to fill the examples page. 80% of this functionality is not going to be supported by us such as chains, etc...
+
+# How to Upload Examples to [Lingtual]
 
 Thank you for your interest in contributing to Lingtual! We welcome all examples that can help our community learn and explore the features of our platform.
 

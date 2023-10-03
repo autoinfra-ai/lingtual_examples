@@ -1,0 +1,371 @@
+{
+  "name": "GoogleCalendar+Gmail+WebSearch",
+  "description": "An agent that has access to your google calendar, gmail, and web search",
+  "data": {
+    "nodes": [
+      {
+        "width": 384,
+        "height": 176,
+        "id": "BingSearch-ypNH2",
+        "type": "genericNode",
+        "position": {
+          "x": 127,
+          "y": 209.140625
+        },
+        "data": {
+          "type": "BingSearch",
+          "node": {
+            "template": {
+              "_type": "BingSearch"
+            },
+            "description": "Searches the Web with Bing",
+            "base_classes": [
+              "Tool",
+              "BaseTool"
+            ],
+            "display_name": "BingSearch",
+            "custom_fields": {},
+            "output_types": [],
+            "documentation": "",
+            "level": "both",
+            "beta": false,
+            "error": null,
+            "requires_access_token": false
+          },
+          "id": "BingSearch-ypNH2",
+          "value": null
+        },
+        "positionAbsolute": {
+          "x": 127,
+          "y": 209.140625
+        }
+      },
+      {
+        "width": 384,
+        "height": 393,
+        "id": "BasicAgent-jmHMs",
+        "type": "genericNode",
+        "position": {
+          "x": 926.7541279540183,
+          "y": 441.39528745761424
+        },
+        "data": {
+          "type": "BasicAgent",
+          "node": {
+            "template": {
+              "tools": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "tools",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "Tool",
+                "list": true
+              },
+              "agent": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "openai-functions",
+                "password": false,
+                "options": [
+                  "zero-shot-react-description",
+                  "react-docstore",
+                  "self-ask-with-search",
+                  "conversational-react-description",
+                  "openai-functions",
+                  "openai-multi-functions"
+                ],
+                "name": "agent",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": true
+              },
+              "prompt": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": true,
+                "value": "\nYou are an AI assistant for interacting with various tools and APIs. Your role is to use available tools\nand integrations defined by the user, provide concise,text-based responses, never invent tools or information that \ndon't exist, avoid unnecessary repetition in commands or queries, and comply with user permissions and\nsystem guidelines. Your goal is to facilitate tasks through text-based interactions with users' tools\nand integrations. Current date in RFC 3339 format: 2023-10-03T17:24:54.377662+00:00. Only use this datetime\nformatting for making any calls to tools.\n",
+                "password": false,
+                "name": "prompt",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "_type": "initialize_agent"
+            },
+            "description": "AI w/memory that can use tools and integrations",
+            "base_classes": [
+              "AgentExecutor",
+              "function"
+            ],
+            "display_name": "BasicAgent",
+            "custom_fields": {},
+            "output_types": [],
+            "documentation": "",
+            "level": "basic",
+            "beta": false,
+            "error": null,
+            "requires_access_token": false
+          },
+          "id": "BasicAgent-jmHMs",
+          "value": null
+        },
+        "positionAbsolute": {
+          "x": 926.7541279540183,
+          "y": 441.39528745761424
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 176,
+        "id": "Gmail-12nXV",
+        "type": "genericNode",
+        "position": {
+          "x": 133.09723257577707,
+          "y": 440.3875280320147
+        },
+        "data": {
+          "type": "Gmail",
+          "node": {
+            "template": {
+              "access_token": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": "",
+                "password": false,
+                "name": "access_token",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "connection_id": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": "",
+                "password": false,
+                "name": "connection_id",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "expiry": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": "",
+                "password": false,
+                "name": "expiry",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "integration_id": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": "google-mail",
+                "password": false,
+                "name": "integration_id",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "_type": "Gmail"
+            },
+            "description": "Integration with Gmail for automating workflows.",
+            "base_classes": [
+              "BaseToolkit",
+              "Gmail",
+              "Tool"
+            ],
+            "display_name": "Gmail",
+            "custom_fields": {},
+            "output_types": [],
+            "documentation": "",
+            "level": "both",
+            "beta": false,
+            "error": null,
+            "requires_access_token": true
+          },
+          "id": "Gmail-12nXV",
+          "value": null
+        },
+        "selected": true,
+        "positionAbsolute": {
+          "x": 133.09723257577707,
+          "y": 440.3875280320147
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 176,
+        "id": "GoogleCalendar-fuUGw",
+        "type": "genericNode",
+        "position": {
+          "x": 132.7124627093524,
+          "y": 681.9742411112595
+        },
+        "data": {
+          "type": "GoogleCalendar",
+          "node": {
+            "template": {
+              "access_token": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": "",
+                "password": false,
+                "name": "access_token",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "connection_id": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": "",
+                "password": false,
+                "name": "connection_id",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "expiry": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": "",
+                "password": false,
+                "name": "expiry",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "integration_id": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": "google-calendar",
+                "password": false,
+                "name": "integration_id",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "_type": "GoogleCalendar"
+            },
+            "description": "Read and create events with Google Calendar",
+            "base_classes": [
+              "BaseToolkit",
+              "GoogleCalendar",
+              "Tool"
+            ],
+            "display_name": "GoogleCalendar",
+            "custom_fields": {},
+            "output_types": [],
+            "documentation": "",
+            "level": "both",
+            "beta": false,
+            "error": null,
+            "requires_access_token": true
+          },
+          "id": "GoogleCalendar-fuUGw",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 132.7124627093524,
+          "y": 681.9742411112595
+        },
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "source": "BingSearch-ypNH2",
+        "sourceHandle": "BingSearch|BingSearch-ypNH2|Tool|BaseTool",
+        "target": "BasicAgent-jmHMs",
+        "targetHandle": "Tool|tools|BasicAgent-jmHMs",
+        "style": {
+          "stroke": "#555"
+        },
+        "className": "",
+        "animated": false,
+        "id": "reactflow__edge-BingSearch-ypNH2BingSearch|BingSearch-ypNH2|Tool|BaseTool-BasicAgent-jmHMsTool|tools|BasicAgent-jmHMs"
+      },
+      {
+        "source": "Gmail-12nXV",
+        "sourceHandle": "Gmail|Gmail-12nXV|BaseToolkit|Gmail|Tool",
+        "target": "BasicAgent-jmHMs",
+        "targetHandle": "Tool|tools|BasicAgent-jmHMs",
+        "style": {
+          "stroke": "#555"
+        },
+        "className": "",
+        "animated": false,
+        "id": "reactflow__edge-Gmail-12nXVGmail|Gmail-12nXV|BaseToolkit|Gmail|Tool-BasicAgent-jmHMsTool|tools|BasicAgent-jmHMs"
+      },
+      {
+        "source": "GoogleCalendar-fuUGw",
+        "sourceHandle": "GoogleCalendar|GoogleCalendar-fuUGw|BaseToolkit|GoogleCalendar|Tool",
+        "target": "BasicAgent-jmHMs",
+        "targetHandle": "Tool|tools|BasicAgent-jmHMs",
+        "style": {
+          "stroke": "#555"
+        },
+        "className": "",
+        "animated": false,
+        "id": "reactflow__edge-GoogleCalendar-fuUGwGoogleCalendar|GoogleCalendar-fuUGw|BaseToolkit|GoogleCalendar|Tool-BasicAgent-jmHMsTool|tools|BasicAgent-jmHMs"
+      }
+    ],
+    "viewport": {
+      "x": -65.77450563821094,
+      "y": -143.5238076247142,
+      "zoom": 0.9699495791126129
+    }
+  },
+  "id": "64cb5879-d457-4b0a-b73d-2784211aefe3",
+  "folder": null,
+  "style": null
+}

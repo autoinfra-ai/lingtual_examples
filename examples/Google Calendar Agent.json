@@ -1,1 +1,213 @@
-{"name":"Google Calendar Agent","description":"Let an AI agent read and create events on your Google Calendar","data":{"nodes":[{"width":384,"height":393,"id":"BasicAgent-Oohux","type":"genericNode","position":{"x":1436,"y":1044.09375},"data":{"type":"BasicAgent","node":{"template":{"tools":{"required":false,"placeholder":"","show":true,"multiline":false,"password":false,"name":"tools","advanced":false,"dynamic":false,"info":"","type":"Tool","list":true},"agent":{"required":true,"placeholder":"","show":true,"multiline":false,"value":"openai-functions","password":false,"options":["zero-shot-react-description","react-docstore","self-ask-with-search","conversational-react-description","openai-functions","openai-multi-functions"],"name":"agent","advanced":false,"dynamic":false,"info":"","type":"str","list":true},"prompt":{"required":true,"placeholder":"","show":true,"multiline":true,"value":"\nYou are an AI assistant for interacting with various tools and APIs. Your role is to use available tools \nand integrations defined by the user, provide concise,text-based responses, never invent tools or information that \ndon't exist, avoid unnecessary repetition in commands or queries, and comply with user permissions and \nsystem guidelines. Your goal is to facilitate tasks through text-based interactions with users' tools \nand integrations. Current date in YYYY-MM-DD format: 2023-09-25\n","password":false,"name":"prompt","advanced":false,"dynamic":false,"info":"","type":"str","list":false},"_type":"initialize_agent"},"description":"AI w/memory that can use tools and integrations","base_classes":["AgentExecutor","function"],"display_name":"BasicAgent","custom_fields":{},"output_types":[],"documentation":"","level":"basic","beta":false,"error":null,"requires_access_token":false},"id":"BasicAgent-Oohux","value":null},"positionAbsolute":{"x":1436,"y":1044.09375}},{"width":384,"height":176,"id":"GoogleCalendarToolkit-M5iP2","type":"genericNode","position":{"x":888.6126224156692,"y":1183.935534548422},"data":{"type":"GoogleCalendarToolkit","node":{"template":{"access_token":{"required":false,"placeholder":"","show":false,"multiline":false,"value":"","password":false,"name":"access_token","advanced":false,"dynamic":false,"info":"","type":"str","list":false},"connection_id":{"required":false,"placeholder":"","show":false,"multiline":false,"value":"","password":false,"name":"connection_id","advanced":false,"dynamic":false,"info":"","type":"str","list":false},"expiry":{"required":false,"placeholder":"","show":false,"multiline":false,"value":"","password":false,"name":"expiry","advanced":false,"dynamic":false,"info":"","type":"str","list":false},"integration_id":{"required":false,"placeholder":"","show":false,"multiline":false,"value":"google-calendar","password":false,"name":"integration_id","advanced":false,"dynamic":false,"info":"","type":"str","list":false},"_type":"GoogleCalendarToolkit"},"description":"Tools that interact with Google Calendar","base_classes":["BaseToolkit","GoogleCalendarToolkit","Tool"],"display_name":"GoogleCalendarToolkit","custom_fields":{},"output_types":[],"documentation":"","level":"advanced","beta":false,"error":null,"requires_access_token":true},"id":"GoogleCalendarToolkit-M5iP2","value":null},"positionAbsolute":{"x":888.6126224156692,"y":1183.935534548422},"selected":true,"dragging":false}],"edges":[{"source":"GoogleCalendarToolkit-M5iP2","sourceHandle":"GoogleCalendarToolkit|GoogleCalendarToolkit-M5iP2|BaseToolkit|GoogleCalendarToolkit|Tool","target":"BasicAgent-Oohux","targetHandle":"Tool|tools|BasicAgent-Oohux","style":{"stroke":"#555"},"className":"","animated":false,"id":"reactflow__edge-GoogleCalendarToolkit-M5iP2GoogleCalendarToolkit|GoogleCalendarToolkit-M5iP2|BaseToolkit|GoogleCalendarToolkit|Tool-BasicAgent-OohuxTool|tools|BasicAgent-Oohux"}],"viewport":{"x":-755.3128596835288,"y":-296.31268400715,"zoom":0.8970000727531877}},"user_id":"","id":"98d92547-6ade-494f-bb93-61c525ea1f63","folder":null,"style":null}
+{
+    "name": "Google Calendar Agent",
+    "description": "An AI agent that can read and create events so you can talk with your Google Calendar.",
+    "data": {
+        "nodes": [
+            {
+                "width": 384,
+                "height": 176,
+                "id": "GoogleCalendar-PkgOz",
+                "type": "genericNode",
+                "position": {
+                    "x": 849.4008676950264,
+                    "y": 558.1540162334392
+                },
+                "data": {
+                    "type": "GoogleCalendar",
+                    "node": {
+                        "template": {
+                            "access_token": {
+                                "required": false,
+                                "placeholder": "",
+                                "show": false,
+                                "multiline": false,
+                                "value": "",
+                                "password": false,
+                                "name": "access_token",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": false
+                            },
+                            "connection_id": {
+                                "required": false,
+                                "placeholder": "",
+                                "show": false,
+                                "multiline": false,
+                                "value": "",
+                                "password": false,
+                                "name": "connection_id",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": false
+                            },
+                            "expiry": {
+                                "required": false,
+                                "placeholder": "",
+                                "show": false,
+                                "multiline": false,
+                                "value": "",
+                                "password": false,
+                                "name": "expiry",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": false
+                            },
+                            "integration_id": {
+                                "required": false,
+                                "placeholder": "",
+                                "show": false,
+                                "multiline": false,
+                                "value": "google-calendar",
+                                "password": false,
+                                "name": "integration_id",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": false
+                            },
+                            "_type": "GoogleCalendar"
+                        },
+                        "description": "Read and create events with Google Calendar",
+                        "base_classes": [
+                            "BaseToolkit",
+                            "GoogleCalendar",
+                            "Tool"
+                        ],
+                        "display_name": "GoogleCalendar",
+                        "custom_fields": {},
+                        "output_types": [],
+                        "documentation": "",
+                        "level": "both",
+                        "beta": false,
+                        "error": null,
+                        "requires_access_token": true
+                    },
+                    "id": "GoogleCalendar-PkgOz",
+                    "value": null
+                },
+                "selected": true,
+                "positionAbsolute": {
+                    "x": 849.4008676950264,
+                    "y": 558.1540162334392
+                },
+                "dragging": false
+            },
+            {
+                "width": 384,
+                "height": 393,
+                "id": "BasicAgent-zsdpo",
+                "type": "genericNode",
+                "position": {
+                    "x": 1414.5694423667726,
+                    "y": 538.1750292213757
+                },
+                "data": {
+                    "type": "BasicAgent",
+                    "node": {
+                        "template": {
+                            "tools": {
+                                "required": false,
+                                "placeholder": "",
+                                "show": true,
+                                "multiline": false,
+                                "password": false,
+                                "name": "tools",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "Tool",
+                                "list": true
+                            },
+                            "agent": {
+                                "required": true,
+                                "placeholder": "",
+                                "show": true,
+                                "multiline": false,
+                                "value": "openai-functions",
+                                "password": false,
+                                "options": [
+                                    "zero-shot-react-description",
+                                    "react-docstore",
+                                    "self-ask-with-search",
+                                    "conversational-react-description",
+                                    "openai-functions",
+                                    "openai-multi-functions"
+                                ],
+                                "name": "agent",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": true
+                            },
+                            "prompt": {
+                                "required": true,
+                                "placeholder": "",
+                                "show": true,
+                                "multiline": true,
+                                "value": "\nYou are an AI assistant for interacting with various tools and APIs. Your role is to use available tools\nand integrations defined by the user, provide concise,text-based responses, never invent tools or information that \ndon't exist, avoid unnecessary repetition in commands or queries, and comply with user permissions and\nsystem guidelines. Your goal is to facilitate tasks through text-based interactions with users' tools\nand integrations. Current date in RFC 3339 format: 2023-10-03T04:11:38.241933+00:00. Only use this datetime\nformatting for making any calls to tools.\n",
+                                "password": false,
+                                "name": "prompt",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": false
+                            },
+                            "_type": "initialize_agent"
+                        },
+                        "description": "AI w/memory that can use tools and integrations",
+                        "base_classes": [
+                            "AgentExecutor",
+                            "function"
+                        ],
+                        "display_name": "BasicAgent",
+                        "custom_fields": {},
+                        "output_types": [],
+                        "documentation": "",
+                        "level": "basic",
+                        "beta": false,
+                        "error": null,
+                        "requires_access_token": false
+                    },
+                    "id": "BasicAgent-zsdpo",
+                    "value": null
+                },
+                "positionAbsolute": {
+                    "x": 1414.5694423667726,
+                    "y": 538.1750292213757
+                }
+            }
+        ],
+        "edges": [
+            {
+                "source": "GoogleCalendar-PkgOz",
+                "sourceHandle": "GoogleCalendar|GoogleCalendar-PkgOz|BaseToolkit|GoogleCalendar|Tool",
+                "target": "BasicAgent-zsdpo",
+                "targetHandle": "Tool|tools|BasicAgent-zsdpo",
+                "style": {
+                    "stroke": "#555"
+                },
+                "className": "stroke-foreground  stroke-connection",
+                "animated": false,
+                "id": "reactflow__edge-GoogleCalendar-PkgOzGoogleCalendar|GoogleCalendar-PkgOz|BaseToolkit|GoogleCalendar|Tool-BasicAgent-zsdpoTool|tools|BasicAgent-zsdpo"
+            }
+        ],
+        "viewport": {
+            "x": -784.440177030192,
+            "y": -297.0487807199439,
+            "zoom": 1.1165518847823883
+        }
+    },
+    "user_id": "",
+    "id": "4b644e23-63af-4588-94fd-0af55e585427",
+    "folder": null,
+    "style": null
+}

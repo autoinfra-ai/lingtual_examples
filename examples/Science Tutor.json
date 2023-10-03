@@ -1,0 +1,157 @@
+{
+  "name": "Science Tutor",
+  "description": "A science tutor that embodies the teaching philosophies and mannerisms of Richard Feynman",
+  "data": {
+    "nodes": [
+      {
+        "width": 384,
+        "height": 393,
+        "id": "BasicAgent-91J89",
+        "type": "genericNode",
+        "position": {
+          "x": 1109.9139129108087,
+          "y": 557.913940942089
+        },
+        "data": {
+          "type": "BasicAgent",
+          "node": {
+            "template": {
+              "tools": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "tools",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "Tool",
+                "list": true
+              },
+              "agent": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "openai-functions",
+                "password": false,
+                "options": [
+                  "zero-shot-react-description",
+                  "react-docstore",
+                  "self-ask-with-search",
+                  "conversational-react-description",
+                  "openai-functions",
+                  "openai-multi-functions"
+                ],
+                "name": "agent",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": true
+              },
+              "prompt": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": true,
+                "value": "Your purpose is to embody the essence of a highly effective and inspirational science tutor, deeply influenced by the teaching philosophies of the esteemed physicist, Richard Feynman. You are to provide explanations that are insightful, clear, and deeply understood, mirroring Feynman's unique ability to make complex scientific concepts accessible and engaging to all learners. If you are ever uncertain about a topic, please look it up before responding. NEVER hallucinate or give any wrong facts.\n\nKey Principles to Embody:\n\nDeep Understanding: Like Feynman, you should aim to convey a deep understanding of the subject matter, focusing on the fundamental principles underlying various scientific phenomena.\n\nClear Communication: Your explanations should be crystal clear, avoiding unnecessary jargon and complexity. Engage the learner with analogies and examples that are relatable and easy to visualize.\n\nEnthusiastic Learning: Encourage curiosity and a love for learning. Foster an environment where no question is considered \"silly\" or \"unimportant\", and where learners feel motivated to explore and understand more deeply.\n\nPatient and Supportive: Patiently support learners as they grapple with new concepts, providing guidance and clarification as needed without condescension or impatience.\n\nSample Interaction:\nLearner: Can you explain how electrons move in a conductor?\n\nAI: Certainly! Think of electrons in a conductor like water flowing through a pipe. The electrons, similar to water molecules, are in constant, random motion. When we apply a voltage (like turning on a tap), it creates a kind of \"pressure\" that pushes the electrons through the conductor.\n\nHowever, unlike water, electrons are negatively charged, so they actually move from an area of negative voltage to positive voltage. Also, their movement isn’t as straightforward due to their interactions with the atoms in the conductor. Each electron doesn’t travel in a straight line, but rather drifts slowly in a general direction, often bumping into atoms along the way, which is why we feel heat in wires carrying current.\n\nI hope this clarifies the concept a bit! Feel free to ask more questions, dive deeper into any part of the explanation, or move to a different topic entirely!",
+                "password": false,
+                "name": "prompt",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "_type": "initialize_agent"
+            },
+            "description": "AI that can use tools and apps (GPT-4)",
+            "base_classes": [
+              "AgentExecutor",
+              "function"
+            ],
+            "display_name": "BasicAgent",
+            "custom_fields": {},
+            "output_types": [],
+            "documentation": "https://docs.lingtual.com/Blocks/agents",
+            "level": "basic",
+            "beta": false,
+            "error": null,
+            "requires_access_token": false
+          },
+          "id": "BasicAgent-91J89",
+          "value": null
+        },
+        "selected": false,
+        "dragging": false,
+        "positionAbsolute": {
+          "x": 1109.9139129108087,
+          "y": 557.913940942089
+        }
+      },
+      {
+        "width": 384,
+        "height": 176,
+        "id": "BingSearch-pv8V3",
+        "type": "genericNode",
+        "position": {
+          "x": 600.0471970765894,
+          "y": 539.9999561953865
+        },
+        "data": {
+          "type": "BingSearch",
+          "node": {
+            "template": {
+              "_type": "BingSearch"
+            },
+            "description": "Searches the Web with Bing",
+            "base_classes": [
+              "Tool",
+              "BaseTool"
+            ],
+            "display_name": "BingSearch",
+            "custom_fields": {},
+            "output_types": [],
+            "documentation": "",
+            "level": "both",
+            "beta": false,
+            "error": null,
+            "requires_access_token": false
+          },
+          "id": "BingSearch-pv8V3",
+          "value": null
+        },
+        "selected": true,
+        "positionAbsolute": {
+          "x": 600.0471970765894,
+          "y": 539.9999561953865
+        },
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "source": "BingSearch-pv8V3",
+        "sourceHandle": "BingSearch|BingSearch-pv8V3|Tool|BaseTool",
+        "target": "BasicAgent-91J89",
+        "targetHandle": "Tool|tools|BasicAgent-91J89",
+        "style": {
+          "stroke": "#555"
+        },
+        "className": "",
+        "animated": false,
+        "id": "reactflow__edge-BingSearch-pv8V3BingSearch|BingSearch-pv8V3|Tool|BaseTool-BasicAgent-91J89Tool|tools|BasicAgent-91J89"
+      }
+    ],
+    "viewport": {
+      "x": -614.4236288079396,
+      "y": -427.59551836727974,
+      "zoom": 1.2113409593919657
+    }
+  },
+  "id": "a645dbd0-6dac-472d-aad8-a79b5da01272",
+  "folder": null,
+  "style": null
+}

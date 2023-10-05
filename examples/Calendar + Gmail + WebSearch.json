@@ -1,5 +1,5 @@
 {
-  "name": "GoogleCalendar+Gmail+WebSearch",
+  "name": "Personal Assistant",
   "description": "An agent that has access to your google calendar, gmail, and web search",
   "data": {
     "nodes": [

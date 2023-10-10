@@ -1,1 +1,205 @@
-{"name":"California Vehicle Law AI","description":"Chat and ask questions with all of California Vehicle Code, with citations to legal codes","data":{"nodes":[{"width":384,"height":434,"id":"PDFTool-HSor8","type":"genericNode","position":{"x":513.2167771669192,"y":605.3336799623158},"data":{"type":"PDFTool","node":{"template":{"file_path":{"required":true,"placeholder":"","show":true,"multiline":false,"value":"Cali_vehicle_code.pdf","suffixes":[".pdf"],"password":false,"name":"file_path","advanced":false,"dynamic":false,"info":"","type":"file","list":false,"fileTypes":["pdf"],"file_path":null},"description":{"required":true,"placeholder":"","show":true,"multiline":true,"value":"This tool allows you to access and query a PDF containing California's legal codes. You can retrieve, summarize, and cite specific sections based on user queries. Have concise summarization, and citation of legal code sections. NEVER hallucinate or invent information.","password":false,"name":"description","advanced":false,"dynamic":false,"info":"","type":"str","list":false},"name":{"required":true,"placeholder":"","show":true,"multiline":false,"value":"california-vehicle-code","password":false,"name":"name","advanced":false,"dynamic":false,"info":"","type":"str","list":false},"_type":"PDFTool"},"description":"Converts a pdf into a tool.","base_classes":["Tool","BaseTool"],"display_name":"PDFTool","custom_fields":{},"output_types":[],"documentation":"","level":"both","beta":false,"error":null,"requires_access_token":false},"id":"PDFTool-HSor8","value":null},"selected":false,"positionAbsolute":{"x":513.2167771669192,"y":605.3336799623158},"dragging":false},{"width":384,"height":393,"id":"BasicAgent-Xyxvq","type":"genericNode","position":{"x":1278.495548725947,"y":733.3284643922586},"data":{"type":"BasicAgent","node":{"template":{"tools":{"required":false,"placeholder":"","show":true,"multiline":false,"password":false,"name":"tools","advanced":false,"dynamic":false,"info":"","type":"Tool","list":true},"agent":{"required":true,"placeholder":"","show":true,"multiline":false,"value":"openai-functions","password":false,"options":["zero-shot-react-description","react-docstore","self-ask-with-search","conversational-react-description","openai-functions","openai-multi-functions"],"name":"agent","advanced":false,"dynamic":false,"info":"","type":"str","list":true},"prompt":{"required":true,"placeholder":"","show":true,"multiline":true,"value":"\nYou are an AI assistant for interacting with various tools and APIs. Your role is to use available tools\nand integrations defined by the user, provide concise,text-based responses, never invent tools or information that \ndon't exist, avoid unnecessary repetition in commands or queries, and comply with user permissions and\nsystem guidelines. Your goal is to facilitate tasks through text-based interactions with users' tools\nand integrations. Current date in RFC 3339 format: 2023-10-03T04:11:38.241933+00:00. Only use this datetime\nformatting for making any calls to tools.\n","password":false,"name":"prompt","advanced":false,"dynamic":false,"info":"","type":"str","list":false},"_type":"initialize_agent"},"description":"AI w/memory that can use tools and integrations","base_classes":["AgentExecutor","function"],"display_name":"BasicAgent","custom_fields":{},"output_types":[],"documentation":"","level":"basic","beta":false,"error":null,"requires_access_token":false},"id":"BasicAgent-Xyxvq","value":null},"positionAbsolute":{"x":1278.495548725947,"y":733.3284643922586}}],"edges":[{"source":"PDFTool-HSor8","sourceHandle":"PDFTool|PDFTool-HSor8|Tool|BaseTool","target":"BasicAgent-Xyxvq","targetHandle":"Tool|tools|BasicAgent-Xyxvq","style":{"stroke":"#555"},"className":"","animated":false,"id":"reactflow__edge-PDFTool-HSor8PDFTool|PDFTool-HSor8|Tool|BaseTool-BasicAgent-XyxvqTool|tools|BasicAgent-Xyxvq"}],"viewport":{"x":-511.55661822782736,"y":-564.8460923049726,"zoom":1.1224430764087636}},"user_id":"","id":"f2d6643a-7136-4b1f-ad63-b01f5c1bcb7c","folder":null,"style":null}
+{
+    "name": "California Vehicle Law AI",
+    "description": "Chat and ask questions with all of California Vehicle Code, with citations to legal codes",
+    "data": {
+        "nodes": [
+            {
+                "width": 384,
+                "height": 434,
+                "id": "PDFTool-HSor8",
+                "type": "genericNode",
+                "position": {
+                    "x": 513.2167771669192,
+                    "y": 605.3336799623158
+                },
+                "data": {
+                    "type": "PDFTool",
+                    "node": {
+                        "template": {
+                            "file_path": {
+                                "required": true,
+                                "placeholder": "",
+                                "show": true,
+                                "multiline": false,
+                                "value": "Cali_vehicle_code.pdf",
+                                "suffixes": [
+                                    ".pdf"
+                                ],
+                                "password": false,
+                                "name": "file_path",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "file",
+                                "list": false,
+                                "fileTypes": [
+                                    "pdf"
+                                ],
+                                "file_path": null
+                            },
+                            "description": {
+                                "required": true,
+                                "placeholder": "",
+                                "show": true,
+                                "multiline": true,
+                                "value": "This tool allows you to access and query a PDF containing California's legal codes. You can retrieve, summarize, and cite specific sections based on user queries. Have concise summarization, and citation of legal code sections. NEVER hallucinate or invent information.",
+                                "password": false,
+                                "name": "description",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": false
+                            },
+                            "name": {
+                                "required": true,
+                                "placeholder": "",
+                                "show": true,
+                                "multiline": false,
+                                "value": "california-vehicle-code",
+                                "password": false,
+                                "name": "name",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": false
+                            },
+                            "_type": "PDFTool"
+                        },
+                        "description": "Converts a pdf into a tool.",
+                        "base_classes": [
+                            "Tool",
+                            "BaseTool"
+                        ],
+                        "display_name": "PDFTool",
+                        "custom_fields": {},
+                        "output_types": [],
+                        "documentation": "",
+                        "level": "both",
+                        "beta": false,
+                        "error": null,
+                        "requires_access_token": false
+                    },
+                    "id": "PDFTool-HSor8",
+                    "value": null
+                },
+                "selected": false,
+                "positionAbsolute": {
+                    "x": 513.2167771669192,
+                    "y": 605.3336799623158
+                },
+                "dragging": false
+            },
+            {
+                "width": 384,
+                "height": 393,
+                "id": "BasicAgent-Xyxvq",
+                "type": "genericNode",
+                "position": {
+                    "x": 1278.495548725947,
+                    "y": 733.3284643922586
+                },
+                "data": {
+                    "type": "BasicAgent",
+                    "node": {
+                        "template": {
+                            "tools": {
+                                "required": false,
+                                "placeholder": "",
+                                "show": true,
+                                "multiline": false,
+                                "password": false,
+                                "name": "tools",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "Tool",
+                                "list": true
+                            },
+                            "agent": {
+                                "required": true,
+                                "placeholder": "",
+                                "show": true,
+                                "multiline": false,
+                                "value": "openai-functions",
+                                "password": false,
+                                "options": [
+                                    "zero-shot-react-description",
+                                    "react-docstore",
+                                    "self-ask-with-search",
+                                    "conversational-react-description",
+                                    "openai-functions",
+                                    "openai-multi-functions"
+                                ],
+                                "name": "agent",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": true
+                            },
+                            "prompt": {
+                                "required": true,
+                                "placeholder": "",
+                                "show": true,
+                                "multiline": true,
+                                "value": "\nYou are an AI assistant for interacting with various tools and APIs. Your role is to use available tools\nand integrations defined by the user, provide concise,text-based responses, never invent tools or information that \ndon't exist, avoid unnecessary repetition in commands or queries, and comply with user permissions and\nsystem guidelines. Your goal is to facilitate tasks through text-based interactions with users' tools\nand integrations. Current date in RFC 3339 format: 2023-10-03T04:11:38.241933+00:00. Only use this datetime\nformatting for making any calls to tools.\n",
+                                "password": false,
+                                "name": "prompt",
+                                "advanced": false,
+                                "dynamic": false,
+                                "info": "",
+                                "type": "str",
+                                "list": false
+                            },
+                            "_type": "initialize_agent"
+                        },
+                        "description": "AI w/memory that can use tools and integrations",
+                        "base_classes": [
+                            "AgentExecutor",
+                            "function"
+                        ],
+                        "display_name": "BasicAgent",
+                        "custom_fields": {},
+                        "output_types": [],
+                        "documentation": "",
+                        "level": "basic",
+                        "beta": false,
+                        "error": null,
+                        "requires_access_token": false
+                    },
+                    "id": "BasicAgent-Xyxvq",
+                    "value": null
+                },
+                "positionAbsolute": {
+                    "x": 1278.495548725947,
+                    "y": 733.3284643922586
+                }
+            }
+        ],
+        "edges": [
+            {
+                "source": "PDFTool-HSor8",
+                "sourceHandle": "PDFTool|PDFTool-HSor8|Tool|BaseTool",
+                "target": "BasicAgent-Xyxvq",
+                "targetHandle": "Tool|tools|BasicAgent-Xyxvq",
+                "style": {
+                    "stroke": "#555"
+                },
+                "className": "",
+                "animated": false,
+                "id": "reactflow__edge-PDFTool-HSor8PDFTool|PDFTool-HSor8|Tool|BaseTool-BasicAgent-XyxvqTool|tools|BasicAgent-Xyxvq"
+            }
+        ],
+        "viewport": {
+            "x": -511.55661822782736,
+            "y": -564.8460923049726,
+            "zoom": 1.1224430764087636
+        }
+    },
+    "user_id": "",
+    "id": "f2d6643a-7136-4b1f-ad63-b01f5c1bcb7c",
+    "folder": "Legal",
+    "style": null
+}

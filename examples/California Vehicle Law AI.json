@@ -104,13 +104,13 @@
                     "type": "BasicAgent",
                     "node": {
                         "template": {
-                            "tools": {
+                            "tools_and_apps": {
                                 "required": false,
                                 "placeholder": "",
                                 "show": true,
                                 "multiline": false,
                                 "password": false,
-                                "name": "tools",
+                                "name": "tools_and_apps",
                                 "advanced": false,
                                 "dynamic": false,
                                 "info": "",
@@ -183,13 +183,13 @@
                 "source": "PDFTool-HSor8",
                 "sourceHandle": "PDFTool|PDFTool-HSor8|Tool|BaseTool",
                 "target": "BasicAgent-Xyxvq",
-                "targetHandle": "Tool|tools|BasicAgent-Xyxvq",
+                "targetHandle": "Tool|tools_and_apps|BasicAgent-Xyxvq",
                 "style": {
                     "stroke": "#555"
                 },
                 "className": "",
                 "animated": false,
-                "id": "reactflow__edge-PDFTool-HSor8PDFTool|PDFTool-HSor8|Tool|BaseTool-BasicAgent-XyxvqTool|tools|BasicAgent-Xyxvq"
+                "id": "reactflow__edge-PDFTool-HSor8PDFTool|PDFTool-HSor8|Tool|BaseTool-BasicAgent-XyxvqTool|tools_and_apps|BasicAgent-Xyxvq"
             }
         ],
         "viewport": {

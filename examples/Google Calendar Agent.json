@@ -112,13 +112,13 @@
                     "type": "BasicAgent",
                     "node": {
                         "template": {
-                            "tools": {
+                            "tools_and_apps": {
                                 "required": false,
                                 "placeholder": "",
                                 "show": true,
                                 "multiline": false,
                                 "password": false,
-                                "name": "tools",
+                                "name": "tools_and_apps",
                                 "advanced": false,
                                 "dynamic": false,
                                 "info": "",
@@ -191,13 +191,13 @@
                 "source": "GoogleCalendar-PkgOz",
                 "sourceHandle": "GoogleCalendar|GoogleCalendar-PkgOz|BaseToolkit|GoogleCalendar|Tool",
                 "target": "BasicAgent-zsdpo",
-                "targetHandle": "Tool|tools|BasicAgent-zsdpo",
+                "targetHandle": "Tool|tools_and_apps|BasicAgent-zsdpo",
                 "style": {
                     "stroke": "#555"
                 },
                 "className": "stroke-foreground  stroke-connection",
                 "animated": false,
-                "id": "reactflow__edge-GoogleCalendar-PkgOzGoogleCalendar|GoogleCalendar-PkgOz|BaseToolkit|GoogleCalendar|Tool-BasicAgent-zsdpoTool|tools|BasicAgent-zsdpo"
+                "id": "reactflow__edge-GoogleCalendar-PkgOzGoogleCalendar|GoogleCalendar-PkgOz|BaseToolkit|GoogleCalendar|Tool-BasicAgent-zsdpoTool|tools_and_apps|BasicAgent-zsdpo"
             }
         ],
         "viewport": {

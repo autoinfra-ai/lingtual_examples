@@ -16,13 +16,13 @@
           "type": "BasicAgent",
           "node": {
             "template": {
-              "tools": {
+              "tools_and_apps": {
                 "required": false,
                 "placeholder": "",
                 "show": true,
                 "multiline": false,
                 "password": false,
-                "name": "tools",
+                "name": "tools_and_apps",
                 "advanced": false,
                 "dynamic": false,
                 "info": "",
@@ -136,13 +136,13 @@
         "source": "BingSearch-pv8V3",
         "sourceHandle": "BingSearch|BingSearch-pv8V3|Tool|BaseTool",
         "target": "BasicAgent-91J89",
-        "targetHandle": "Tool|tools|BasicAgent-91J89",
+        "targetHandle": "Tool|tools_and_apps|BasicAgent-91J89",
         "style": {
           "stroke": "#555"
         },
         "className": "",
         "animated": false,
-        "id": "reactflow__edge-BingSearch-pv8V3BingSearch|BingSearch-pv8V3|Tool|BaseTool-BasicAgent-91J89Tool|tools|BasicAgent-91J89"
+        "id": "reactflow__edge-BingSearch-pv8V3BingSearch|BingSearch-pv8V3|Tool|BaseTool-BasicAgent-91J89Tool|tools_and_apps|BasicAgent-91J89"
       }
     ],
     "viewport": {

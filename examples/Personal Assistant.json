@@ -362,7 +362,7 @@
         }
     },
     "user_id": "auth0|64a0e7cb1a091ad7c24501a6",
-    "id": "b4dbbd24-7ba2-4d62-a415-5ce1276c721c",
+    "public_flow_id": "b4dbbd24-7ba2-4d62-a415-5ce1276c721c",
     "folder": "Productivity",
     "style": null
 }

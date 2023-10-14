@@ -1,5 +1,5 @@
 {
-  "name": "Bayesian Smoothing",
+  "name": "Bayesian Smoothing Public",
   "description": "Speak. Sync. Succeed.",
   "data": {
     "nodes": [
@@ -185,11 +185,11 @@
       {
         "width": 384,
         "height": 454,
-        "id": "PDFTool-mN9JU",
+        "id": "PDFTool-S5mft",
         "type": "genericNode",
         "position": {
-          "x": 426.38124595324837,
-          "y": 386.32591439379917
+          "x": 470.96861529492884,
+          "y": 421.62572907984145
         },
         "data": {
           "type": "PDFTool",
@@ -214,7 +214,7 @@
                 "fileTypes": [
                   "pdf"
                 ],
-                "file_path": "/Users/petertran/Library/Caches/langflow/a98654c0-e3ed-4aab-b615-f866d5d878cc/41c30a59b4e6d2418634959a5991f60b1e6cba881eb2643adba3f432394b23f2"
+                "file_path": null
               },
               "description": {
                 "required": true,
@@ -260,15 +260,15 @@
             "error": null,
             "requires_access_token": false
           },
-          "id": "PDFTool-mN9JU",
+          "id": "PDFTool-S5mft",
           "value": null
         },
         "selected": true,
+        "dragging": false,
         "positionAbsolute": {
-          "x": 426.38124595324837,
-          "y": 386.32591439379917
-        },
-        "dragging": false
+          "x": 470.96861529492884,
+          "y": 421.62572907984145
+        }
       }
     ],
     "edges": [
@@ -285,25 +285,25 @@
         "id": "reactflow__edge-Gmail-odwlXGmail|Gmail-odwlX|BaseToolkit|Gmail|Tool-BasicAgent-0M9RGTool|tools_and_apps|BasicAgent-0M9RG"
       },
       {
-        "source": "PDFTool-mN9JU",
-        "sourceHandle": "PDFTool|PDFTool-mN9JU|Tool|BaseTool",
+        "source": "PDFTool-S5mft",
+        "sourceHandle": "PDFTool|PDFTool-S5mft|Tool|BaseTool",
         "target": "BasicAgent-0M9RG",
         "targetHandle": "Tool|tools_and_apps|BasicAgent-0M9RG",
         "style": {
           "stroke": "#555"
         },
-        "className": "stroke-foreground  stroke-connection",
+        "className": "",
         "animated": false,
-        "id": "reactflow__edge-PDFTool-mN9JUPDFTool|PDFTool-mN9JU|Tool|BaseTool-BasicAgent-0M9RGTool|tools_and_apps|BasicAgent-0M9RG"
+        "id": "reactflow__edge-PDFTool-S5mftPDFTool|PDFTool-S5mft|Tool|BaseTool-BasicAgent-0M9RGTool|tools_and_apps|BasicAgent-0M9RG"
       }
     ],
     "viewport": {
-      "x": -356.12106923103613,
-      "y": -168.24449792592804,
-      "zoom": 1.136213861927793
+      "x": -505.10341197273056,
+      "y": 61.559372473224926,
+      "zoom": 1.0740220648954353
     }
   },
-  "id": "a98654c0-e3ed-4aab-b615-f866d5d878cc",
+  "public_flow_id": "a98654c0-e3ed-4aab-b615-f866d5d878cc",
   "folder": null,
   "style": null
 }

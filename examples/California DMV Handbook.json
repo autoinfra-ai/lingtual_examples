@@ -1,0 +1,200 @@
+{
+  "description": "Your Next Big Idea Starts with a Chat.",
+  "name": "California DMV Handbook",
+  "data": {
+    "nodes": [
+      {
+        "width": 384,
+        "height": 446,
+        "id": "PDFTool-g15od",
+        "type": "genericNode",
+        "position": {
+          "x": 233,
+          "y": 229.03125
+        },
+        "data": {
+          "type": "PDFTool",
+          "node": {
+            "template": {
+              "file": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "DMV.pdf",
+                "suffixes": [
+                  ".pdf"
+                ],
+                "password": false,
+                "name": "file",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "file",
+                "list": false,
+                "fileTypes": [
+                  "pdf"
+                ],
+                "file_path": "/home/user/.cache/langflow/ee67f937-575a-40b2-af6f-11244c7d18ec/f8faeada2ec2e5c9b0f25882056ca0b39c5f502b600dd1a89f6383da2f08a68f"
+              },
+              "description": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": true,
+                "value": "The California DMV handbook. Please use this as reference for any questions about the rules of driving in California",
+                "password": false,
+                "name": "description",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "name": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "get_california_dmv_handbook",
+                "password": false,
+                "name": "name",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "_type": "PDFTool"
+            },
+            "description": "Gives an agent access to a PDF file. IMPORTANT: Provide a 1 sentence description of the PDF.",
+            "base_classes": [
+              "Tool",
+              "BaseTool"
+            ],
+            "display_name": "PDFTool",
+            "custom_fields": {},
+            "output_types": [],
+            "documentation": "",
+            "level": "both",
+            "beta": false,
+            "error": null,
+            "requires_access_token": false
+          },
+          "id": "PDFTool-g15od",
+          "value": null
+        },
+        "selected": true,
+        "positionAbsolute": {
+          "x": 233,
+          "y": 229.03125
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 385,
+        "id": "BasicAgent-0ze86",
+        "type": "genericNode",
+        "position": {
+          "x": 892,
+          "y": 234.03125
+        },
+        "data": {
+          "type": "BasicAgent",
+          "node": {
+            "template": {
+              "tools_and_apps": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "tools_and_apps",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "Tool",
+                "list": true
+              },
+              "agent": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "openai-functions",
+                "password": false,
+                "options": [
+                  "openai-functions",
+                  "openai-multi-functions"
+                ],
+                "name": "agent",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": true
+              },
+              "prompt": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": true,
+                "value": "You are an AI assistant that can use data sources and tools to performs tasks and answer questions. Your role is to use available tools and integrations to answer user's questions. Provide concise,text-based responses, NEVER invent tools or information that don't exist, avoid unnecessary repetition in commands or queries.",
+                "password": false,
+                "name": "prompt",
+                "advanced": false,
+                "dynamic": false,
+                "info": "",
+                "type": "str",
+                "list": false
+              },
+              "_type": "initialize_agent"
+            },
+            "description": "AI that can use tools and apps",
+            "base_classes": [
+              "AgentExecutor"
+            ],
+            "display_name": "BasicAgent",
+            "custom_fields": {},
+            "output_types": [],
+            "documentation": "https://docs.lingtual.com/Blocks/agents",
+            "level": "basic",
+            "beta": false,
+            "error": null,
+            "requires_access_token": false
+          },
+          "id": "BasicAgent-0ze86",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 892,
+          "y": 234.03125
+        },
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "source": "PDFTool-g15od",
+        "sourceHandle": "PDFTool|PDFTool-g15od|Tool|BaseTool",
+        "target": "BasicAgent-0ze86",
+        "targetHandle": "Tool|tools_and_apps|BasicAgent-0ze86",
+        "style": {
+          "stroke": "#555"
+        },
+        "className": "stroke-foreground  stroke-connection",
+        "animated": false,
+        "id": "reactflow__edge-PDFTool-g15odPDFTool|PDFTool-g15od|Tool|BaseTool-BasicAgent-0ze86Tool|tools_and_apps|BasicAgent-0ze86"
+      }
+    ],
+    "viewport": {
+      "x": 5,
+      "y": -1,
+      "zoom": 1
+    }
+  },
+  "folder": null,
+  "public_flow_id": "ee67f937-575a-40b2-af6f-11244c7d18ec"
+}

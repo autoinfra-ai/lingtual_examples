@@ -6,7 +6,7 @@
       {
         "width": 384,
         "height": 446,
-        "id": "PDFTool-g15od",
+        "id": "PDFTool-s9fdR",
         "type": "genericNode",
         "position": {
           "x": 233,
@@ -35,7 +35,7 @@
                 "fileTypes": [
                   "pdf"
                 ],
-                "file_path": "/home/user/.cache/langflow/ee67f937-575a-40b2-af6f-11244c7d18ec/f8faeada2ec2e5c9b0f25882056ca0b39c5f502b600dd1a89f6383da2f08a68f"
+                "file_path": "/home/user/.cache/langflow/68adc240-f745-45a4-98e7-db8e15998949/f8faeada2ec2e5c9b0f25882056ca0b39c5f502b600dd1a89f6383da2f08a68f"
               },
               "description": {
                 "required": true,
@@ -81,7 +81,7 @@
             "error": null,
             "requires_access_token": false
           },
-          "id": "PDFTool-g15od",
+          "id": "PDFTool-s9fdR",
           "value": null
         },
         "selected": true,
@@ -94,7 +94,7 @@
       {
         "width": 384,
         "height": 385,
-        "id": "BasicAgent-0ze86",
+        "id": "BasicAgent-kDRjD",
         "type": "genericNode",
         "position": {
           "x": 892,
@@ -164,7 +164,7 @@
             "error": null,
             "requires_access_token": false
           },
-          "id": "BasicAgent-0ze86",
+          "id": "BasicAgent-kDRjD",
           "value": null
         },
         "selected": false,
@@ -177,24 +177,24 @@
     ],
     "edges": [
       {
-        "source": "PDFTool-g15od",
-        "sourceHandle": "PDFTool|PDFTool-g15od|Tool|BaseTool",
-        "target": "BasicAgent-0ze86",
-        "targetHandle": "Tool|tools_and_apps|BasicAgent-0ze86",
+        "source": "PDFTool-s9fdR",
+        "sourceHandle": "PDFTool|PDFTool-s9fdR|Tool|BaseTool",
+        "target": "BasicAgent-kDRjD",
+        "targetHandle": "Tool|tools_and_apps|BasicAgent-kDRjD",
         "style": {
           "stroke": "#555"
         },
-        "className": "stroke-foreground  stroke-connection",
+        "className": "",
         "animated": false,
-        "id": "reactflow__edge-PDFTool-g15odPDFTool|PDFTool-g15od|Tool|BaseTool-BasicAgent-0ze86Tool|tools_and_apps|BasicAgent-0ze86"
+        "id": "reactflow__edge-PDFTool-s9fdRPDFTool|PDFTool-s9fdR|Tool|BaseTool-BasicAgent-kDRjDTool|tools_and_apps|BasicAgent-kDRjD"
       }
     ],
     "viewport": {
-      "x": 5,
-      "y": -1,
-      "zoom": 1
+      "x": -277.1152270548241,
+      "y": -160.6444151486097,
+      "zoom": 1.5322932101455589
     }
   },
+  "public_flow_id": "68adc240-f745-45a4-98e7-db8e15998949",
   "folder": null,
-  "public_flow_id": "ee67f937-575a-40b2-af6f-11244c7d18ec"
 }

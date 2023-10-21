@@ -90,14 +90,14 @@
             {
                 "width": 384,
                 "height": 434,
-                "id": "PDFTool-IVedV",
+                "id": "PDF-IVedV",
                 "type": "genericNode",
                 "position": {
                     "x": 363.5311861660833,
                     "y": 556.1644922181379
                 },
                 "data": {
-                    "type": "PDFTool",
+                    "type": "PDF",
                     "node": {
                         "template": {
                             "file": {
@@ -149,14 +149,14 @@
                                 "type": "str",
                                 "list": false
                             },
-                            "_type": "PDFTool"
+                            "_type": "PDF"
                         },
                         "description": "Allows model to read PDFs",
                         "base_classes": [
                             "Tool",
                             "BaseTool"
                         ],
-                        "display_name": "PDFTool",
+                        "display_name": "PDF",
                         "custom_fields": {},
                         "output_types": [],
                         "documentation": "",
@@ -165,7 +165,7 @@
                         "error": null,
                         "requires_access_token": false
                     },
-                    "id": "PDFTool-IVedV",
+                    "id": "PDF-IVedV",
                     "value": null
                 },
                 "selected": false,
@@ -178,8 +178,8 @@
         ],
         "edges": [
             {
-                "source": "PDFTool-IVedV",
-                "sourceHandle": "PDFTool|PDFTool-IVedV|Tool|BaseTool",
+                "source": "PDF-IVedV",
+                "sourceHandle": "PDF|PDF-IVedV|Tool|BaseTool",
                 "target": "BasicAgent-X7kSe",
                 "targetHandle": "Tool|tools_and_apps|BasicAgent-X7kSe",
                 "style": {
@@ -187,7 +187,7 @@
                 },
                 "className": "",
                 "animated": false,
-                "id": "reactflow__edge-PDFTool-IVedVPDFTool|PDFTool-IVedV|Tool|BaseTool-BasicAgent-X7kSeTool|tools_and_apps|BasicAgent-X7kSe"
+                "id": "reactflow__edge-PDF-IVedVPDF|PDF-IVedV|Tool|BaseTool-BasicAgent-X7kSeTool|tools_and_apps|BasicAgent-X7kSe"
             }
         ],
         "viewport": {

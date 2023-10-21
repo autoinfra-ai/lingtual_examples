@@ -6,14 +6,14 @@
       {
         "width": 384,
         "height": 434,
-        "id": "PDFTool-W6n9p",
+        "id": "PDF-W6n9p",
         "type": "genericNode",
         "position": {
           "x": 160,
           "y": 199.1875
         },
         "data": {
-          "type": "PDFTool",
+          "type": "PDF",
           "node": {
             "template": {
               "file_path": {
@@ -65,14 +65,14 @@
                 "type": "str",
                 "list": false
               },
-              "_type": "PDFTool"
+              "_type": "PDF"
             },
             "description": "Converts a pdf into a tool.",
             "base_classes": [
               "Tool",
               "BaseTool"
             ],
-            "display_name": "PDFTool",
+            "display_name": "PDF",
             "custom_fields": {},
             "output_types": [],
             "documentation": "",
@@ -81,7 +81,7 @@
             "error": null,
             "requires_access_token": false
           },
-          "id": "PDFTool-W6n9p",
+          "id": "PDF-W6n9p",
           "value": null
         },
         "selected": true,
@@ -182,8 +182,8 @@
     ],
     "edges": [
       {
-        "source": "PDFTool-W6n9p",
-        "sourceHandle": "PDFTool|PDFTool-W6n9p|Tool|BaseTool",
+        "source": "PDF-W6n9p",
+        "sourceHandle": "PDF|PDF-W6n9p|Tool|BaseTool",
         "target": "BasicAgent-F9Q55",
         "targetHandle": "Tool|tools|BasicAgent-F9Q55",
         "style": {
@@ -191,7 +191,7 @@
         },
         "className": "",
         "animated": false,
-        "id": "reactflow__edge-PDFTool-W6n9pPDFTool|PDFTool-W6n9p|Tool|BaseTool-BasicAgent-F9Q55Tool|tools|BasicAgent-F9Q55"
+        "id": "reactflow__edge-PDF-W6n9pPDF|PDF-W6n9p|Tool|BaseTool-BasicAgent-F9Q55Tool|tools|BasicAgent-F9Q55"
       }
     ],
     "viewport": {

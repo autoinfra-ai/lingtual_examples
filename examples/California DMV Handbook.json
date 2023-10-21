@@ -6,14 +6,14 @@
       {
         "width": 384,
         "height": 446,
-        "id": "PDFTool-s9fdR",
+        "id": "PDF-s9fdR",
         "type": "genericNode",
         "position": {
           "x": 233,
           "y": 229.03125
         },
         "data": {
-          "type": "PDFTool",
+          "type": "PDF",
           "node": {
             "template": {
               "file": {
@@ -65,14 +65,14 @@
                 "type": "str",
                 "list": false
               },
-              "_type": "PDFTool"
+              "_type": "PDF"
             },
             "description": "Gives an agent access to a PDF file. IMPORTANT: Provide a 1 sentence description of the PDF.",
             "base_classes": [
               "Tool",
               "BaseTool"
             ],
-            "display_name": "PDFTool",
+            "display_name": "PDF",
             "custom_fields": {},
             "output_types": [],
             "documentation": "",
@@ -81,7 +81,7 @@
             "error": null,
             "requires_access_token": false
           },
-          "id": "PDFTool-s9fdR",
+          "id": "PDF-s9fdR",
           "value": null
         },
         "selected": true,
@@ -177,8 +177,8 @@
     ],
     "edges": [
       {
-        "source": "PDFTool-s9fdR",
-        "sourceHandle": "PDFTool|PDFTool-s9fdR|Tool|BaseTool",
+        "source": "PDF-s9fdR",
+        "sourceHandle": "PDF|PDF-s9fdR|Tool|BaseTool",
         "target": "BasicAgent-kDRjD",
         "targetHandle": "Tool|tools_and_apps|BasicAgent-kDRjD",
         "style": {
@@ -186,7 +186,7 @@
         },
         "className": "",
         "animated": false,
-        "id": "reactflow__edge-PDFTool-s9fdRPDFTool|PDFTool-s9fdR|Tool|BaseTool-BasicAgent-kDRjDTool|tools_and_apps|BasicAgent-kDRjD"
+        "id": "reactflow__edge-PDF-s9fdRPDF|PDF-s9fdR|Tool|BaseTool-BasicAgent-kDRjDTool|tools_and_apps|BasicAgent-kDRjD"
       }
     ],
     "viewport": {
